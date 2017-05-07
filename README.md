@@ -24,10 +24,10 @@ Call URL: curl SERVER_ADDRESS/?op=fetch
 
 PARAMETERS:
 
-..op: Expected Value: fetch  REQUIRED
+--op: Expected Value: fetch  REQUIRED
 
 RETURNS:
-..JSON object of all fields for all contacts in the database or error message
+--JSON object of all fields for all contacts in the database or error message
 
 SELECT ONE - Selects and returns one contact that matches the provided email address as JSON object
 
