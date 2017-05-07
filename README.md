@@ -15,14 +15,14 @@ If the DB or Table do not exist on the MySQL database provided by the $host vari
 Once the database is set up and the index.php placed in a PHP enabled server folder, you can run the REST functions as detailed below:
 
 SELECT ALL (default action) - Selects and returns all fields for all contacts in the database as JSON object
-Call URL: http(s)://SERVER_ADDRESS/?op=fetch
+Call URL: curl SERVER_ADDRESS/?op=fetch
 PARAMETERS:
 op: Expected Value: fetch  <REQUIRED>
 RETURNS:
 JSON object of all fields for all contacts in the database or error message
 
 SELECT ONE - Selects and returns one contact that matches the provided email address as JSON object
-Call URL: http(s)://SERVER_ADDRESS/?op=fetch&email=email@email.com
+Call URL: curl SERVER_ADDRESS/?op=fetch&email=email@email.com
 PARAMETERS:
 op: Expected Value: fetch <REQUIRED>
 email: Expected Value: email address of contact you are selecting <REQUIRED>
@@ -30,7 +30,7 @@ RETURNS:
 JSON object of all fields for selected contact in the database or error message
 
 CREATE - Creates new contact record based on provided: Firstname, Lastname, Age, Email, and Zipcode. Returns a confirmation message of success or failure
-Call URL: http(s)://SERVER_ADDRESS/?op=create&email=email@email.com&fname=FirstName&lname=LastName&age=Age&zip=Zipcode
+Call URL: curl SERVER_ADDRESS/?op=create&email=email@email.com&fname=FirstName&lname=LastName&age=Age&zip=Zipcode
 PARAMETERS:
 op: Expected Value: create <REQUIRED>
 email: Expected Value: email address of contact you are creating <REQUIRED>
@@ -42,7 +42,7 @@ RETURNS:
 Confirmation JSON object or error message
 
 UPDATE - Updates a contact record based on provided: Email, [Firstname, Lastname, Age, and Zipcode]. Returns a confirmation message of success or failure
-Call URL: http(s)://SERVER_ADDRESS/?op=update&email=email@email.com&fname=FirstName&lname=LastName&age=Age&zip=Zipcode
+Call URL: curl SERVER_ADDRESS/?op=update&email=email@email.com&fname=FirstName&lname=LastName&age=Age&zip=Zipcode
 PARAMETERS:
 op: Expected Value: update <REQUIRED>
 email: Expected Value: email address of contact you are updating <REQUIRED>
@@ -55,7 +55,7 @@ Confirmation JSON object or error message
 
 
 REMOVE - Removes a contact record based on provided: Email. Returns a confirmation message of success or failure
-Call URL: http(s)://SERVER_ADDRESS/?op=remove&email=email@email.com
+Call URL: curl SERVER_ADDRESS/?op=remove&email=email@email.com
 PARAMETERS:
 op: Expected Value: update <REQUIRED>
 email: Expected Value: email address of contact you are updating <REQUIRED>
