@@ -1,6 +1,6 @@
 ## Cloud_Computing-week8_Lab9
 # PHP Rest App for Week 8, Lab 9 Assignment for Cloud Computing
-=====================================================
+
 
 The index.php in this repository provides a REST interface that allows a user to Select All, Select One, Create, Update or Delete a contact in a contact database. (Note the the documentation assumes that "indext.php" will serve as the default document for the root folder of your PHP enabled server.
 
@@ -27,20 +27,23 @@ PARAMETERS:
 --op: Expected Value: fetch  REQUIRED
 
 RETURNS:
+
 --JSON object of all fields for all contacts in the database or error message
 
+*****
 SELECT ONE - Selects and returns one contact that matches the provided email address as JSON object
 
 Call URL: curl SERVER_ADDRESS/?op=fetch&email=email@email.com
 
 PARAMETERS:
 
-op: Expected Value: fetch REQUIRED
+--op: Expected Value: fetch REQUIRED
 
-email: Expected Value: email address of contact you are selecting REQUIRED
+--email: Expected Value: email address of contact you are selecting REQUIRED
 
 RETURNS:
-JSON object of all fields for selected contact in the database or error message
+
+--JSON object of all fields for selected contact in the database or error message
 
 CREATE - Creates new contact record based on provided: Firstname, Lastname, Age, Email, and Zipcode. Returns a confirmation message of success or failure
 
