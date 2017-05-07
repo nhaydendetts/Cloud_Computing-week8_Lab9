@@ -2,7 +2,7 @@
 # PHP Rest App for Week 8, Lab 9 Assignment for Cloud Computing
 
 
-The index.php in this repository provides a REST interface that allows a user to Select All, Select One, Create, Update or Delete a contact in a contact database. (Note the the documentation assumes that "indext.php" will serve as the default document for the root folder of your PHP enabled server.
+The index.php in this repository provides a GET interface that allows a user to Select All, Select One, Create, Update or Delete a contact in a contact database. (Note the the documentation assumes that "indext.php" will serve as the default document for the root folder of your PHP enabled server.
 
 In order for this interface to work, the following constant values must be set up within the Index.php file
 
